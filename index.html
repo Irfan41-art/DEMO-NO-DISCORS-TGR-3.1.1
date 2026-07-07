@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./app_icon.ico" />
+    <link rel="preload" as="image" href="./logodiscorsgrid.svg" />
+    <link rel="preload" as="image" href="./dewan.png" />
+    <link rel="preload" as="image" href="./juri.png" />
+    <link rel="preload" as="image" href="./sekretaris.png" />
+    <link rel="preload" as="image" href="./monitor.png" />
+    <script>
+      (function() {
+        const assets = ["./logodiscorsgrid.svg", "./dewan.png", "./juri.png", "./sekretaris.png", "./monitor.png"];
+        assets.forEach(src => {
+          const img = new Image();
+          img.src = src;
+        });
+      })();
+    </script>
+    <title>Sistem Skoring Digital Pencak Silat Offline</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./src/main.tsx"></script>
+  </body>
+</html>
+

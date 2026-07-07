@@ -1,0 +1,8 @@
+{
+  "name": "NO DISCORS SILAT_TGRS-VERSI 3.1_UJI COBA BAGAN9",
+  "description": "Sistem penilaian digital olahraga Pencak Silat berbasis web offline untuk Dewan, Juri, Sekretaris, dan Monitor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

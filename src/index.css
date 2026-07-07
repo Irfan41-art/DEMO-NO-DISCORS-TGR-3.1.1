@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-brand-purple: #1a0033;
+  --color-brand-dark: #05000a;
+}
+
+/* Base style resets if any are needed */
+body {
+  background-color: #05000a;
+  color: #ffffff;
+}
+
+@keyframes border-beam-anim {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-border-beam {
+  stroke-dasharray: 25 75;
+  animation: border-beam-anim 6s linear infinite;
+}
+
+@keyframes text-gold-shine {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.gold-shine-text {
+  background: linear-gradient(
+    to right,
+    rgba(218, 165, 32, 0.35) 0%,
+    rgba(255, 215, 0, 0.9) 35%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 215, 0, 0.9) 65%,
+    rgba(218, 165, 32, 0.35) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: text-gold-shine 3.5s linear infinite;
+  filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.45));
+  padding-right: 0.25em;
+  margin-right: -0.25em;
+}
+
+@keyframes gold-shine-bg-anim {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.gold-shimmer-bg {
+  background: linear-gradient(
+    120deg,
+    #cf9e1d 0%,
+    #ffd700 30%,
+    #ffffff 50%,
+    #ffd700 70%,
+    #cf9e1d 100%
+  );
+  background-size: 200% auto;
+  animation: gold-shine-bg-anim 2s linear infinite;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+  border: 2px solid #fff3a1 !important;
+  color: #0c0827 !important;
+  text-shadow: 0 0 1px rgba(255,255,255,0.6);
+}
+
+/* Global select option styling to match deep blue-purple gradient theme and avoid white text-on-white bg issue */
+select option {
+  background-color: #12092e !important;
+  color: #ffffff !important;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+@keyframes flash-yellow-anim {
+  0% {
+    background-color: rgba(234, 179, 8, 0.95) !important;
+    box-shadow: 0 0 35px rgba(234, 179, 8, 0.95);
+    border-color: rgba(250, 204, 21, 1) !important;
+  }
+  100% {
+    background-color: rgba(234, 179, 8, 0);
+    box-shadow: none;
+    border-color: rgba(168, 85, 247, 0.2);
+  }
+}
+
+.flash-yellow {
+  animation: flash-yellow-anim 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Avoid inner vertical scrollbar on Dewan and Monitor Panels when not fullscreen */
+#dewan-seni-panel:not(.h-screen),
+#live-monitor-seni-screen:not(.h-screen),
+#victory-scoreboard-screen:not(.h-screen) {
+  overflow: visible !important;
+}
+
+

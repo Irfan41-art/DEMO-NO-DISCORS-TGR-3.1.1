@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="juriGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="juriBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#172554" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+  <!-- Rounded hex-shield or soft polygon background -->
+  <rect x="15" y="15" width="210" height="210" rx="36" fill="url(#juriBgGrad)" stroke="url(#juriGrad)" stroke-width="3" opacity="0.9" />
+  
+  <!-- Main scoring/combat juri icon -->
+  <g transform="translate(60, 50)">
+    <!-- Scoring Target/Crosshair in background -->
+    <circle cx="60" cy="70" r="45" fill="none" stroke="url(#juriGrad)" stroke-width="5" stroke-dasharray="8 8" />
+    <circle cx="60" cy="70" r="25" fill="none" stroke="url(#juriGrad)" stroke-width="4" />
+    <circle cx="60" cy="70" r="8" fill="url(#juriGrad)" />
+    
+    <!-- Crosshair ticks -->
+    <line x1="60" y1="15" x2="60" y2="30" stroke="url(#juriGrad)" stroke-width="4" stroke-linecap="round" />
+    <line x1="60" y1="110" x2="60" y2="125" stroke="url(#juriGrad)" stroke-width="4" stroke-linecap="round" />
+    <line x1="5" y1="70" x2="20" y2="70" stroke="url(#juriGrad)" stroke-width="4" stroke-linecap="round" />
+    <line x1="100" y1="70" x2="115" y2="70" stroke="url(#juriGrad)" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Boxing glove/Fist gesture or scoring checkmark accent -->
+    <path d="M 75 85 L 90 100 L 120 70" fill="none" stroke="url(#juriGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>
