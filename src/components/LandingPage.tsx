@@ -34,7 +34,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onSelectRole }) => {
         {/* Header Icon logo */}
         <div className="mb-6 flex items-center justify-center">
           <img
-            src="/logodiscorsgrid.svg"
+            src="./logodiscorsgrid.svg"
             alt="Logo Discors Grid"
             className="w-28 h-28 object-contain animate-pulse drop-shadow-[0_0_20px_rgba(59,130,246,0.25)] transition-transform duration-300 hover:scale-105"
             referrerPolicy="no-referrer"

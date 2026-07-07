@@ -2393,7 +2393,7 @@ export default function App() {
             <div className="flex flex-col items-center select-none pt-2 pb-1">
               <img
                 id="brand-logo-discors-license"
-                src="/temadiscors.png?v=15"
+                src="./temadiscors.png?v=15"
                 alt="DISCORS - Digital Scoring Pencak Silat"
                 className="h-32 object-contain filter drop-shadow-[0_4px_12px_rgba(168,85,247,0.25)] hover:scale-105 transition-transform duration-300"
                 referrerPolicy="no-referrer"

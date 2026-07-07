@@ -840,7 +840,7 @@ export const JuriPanel: React.FC<JuriPanelProps> = ({
                 {/* MOVEMENT DETAILS (MIDDLE COLUMN) */}
                 <div className="col-span-2 bg-slate-900/60 p-1 sm:p-2 sm:landscape:p-0.5 flex flex-col justify-center items-center text-center select-none border-r border-slate-700/60 landscape:p-0.5">
                   <img
-                    src="/logodiscorsgrid.svg"
+                    src="./logodiscorsgrid.svg"
                     alt="Logo Discors Grid"
                     className="max-h-[85%] max-w-[90%] object-contain pointer-events-none opacity-90 transition-all duration-150"
                     referrerPolicy="no-referrer"
